@@ -27,3 +27,6 @@ htmlcov/
 *.tfstate*
 *.tfvars
 
+
+*storybook.log
+storybook-static

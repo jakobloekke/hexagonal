@@ -3,6 +3,7 @@
 Auto-generated from all feature plans. Last updated: 2025-12-12
 
 ## Active Technologies
+- TypeScript 5.6+, React 18+ (002-shared-ui-storybook)
 
 - Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts) (001-baseline-foundation)
 
@@ -22,6 +23,7 @@ cd src [ONLY COMMANDS FOR ACTIVE TECHNOLOGIES][ONLY COMMANDS FOR ACTIVE TECHNOLO
 Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts): Follow standard conventions
 
 ## Recent Changes
+- 002-shared-ui-storybook: Added TypeScript 5.6+, React 18+
 
 - 001-baseline-foundation: Added Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts)
 

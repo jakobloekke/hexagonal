@@ -1,6 +1,9 @@
 {
   "name": "secondgen-platform",
   "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "concurrently \"pnpm --filter frontend dev\" \"cd apps/backend && uv run fastapi dev app/main.py\"",
     "build": "pnpm -r build",
@@ -8,11 +11,18 @@
     "test:api": "cd apps/backend && PYTHONPATH=$PWD uv run pytest",
     "lint": "pnpm -r lint && pnpm lint:api",
     "lint:api": "cd apps/backend && uv run ruff check",
+    "storybook": "pnpm --filter @secondgen/ui storybook",
     "setup": "pnpm install && cd apps/backend && uv sync"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
     "prettier": "^3.4.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    }
   }
 }
 

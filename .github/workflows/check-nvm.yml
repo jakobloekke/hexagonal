@@ -1,0 +1,29 @@
+name: Check NVM
+
+on:
+  push:
+    paths:
+      - '.nvmrc'
+      - 'package.json'
+  pull_request:
+    paths:
+      - '.nvmrc'
+      - 'package.json'
+
+jobs:
+  check-nvm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check .nvmrc matches package.json engines
+        run: |
+          NVM_VERSION=$(cat .nvmrc)
+          PACKAGE_ENGINE=$(jq -r '.engines.node' package.json)
+          echo "NVM Version: $NVM_VERSION"
+          echo "Package Engine: $PACKAGE_ENGINE"
+          
+          # Simple check to see if package engine string contains nvm version major
+          if [[ "$PACKAGE_ENGINE" != *"${NVM_VERSION%%.*}"* ]]; then
+            echo "Warning: .nvmrc version ($NVM_VERSION) might not match package.json engines ($PACKAGE_ENGINE)"
+          fi
+
