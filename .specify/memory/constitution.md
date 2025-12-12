@@ -32,7 +32,7 @@ This document serves as the supreme governance record for the SecondGen project.
 
 **Rule:** The system is a single repository containing both the frontend (React/TypeScript) and backend (Python/FastAPI), managed as distinct but co-located toolchains.
 
-**Rationale:** We leverage the best tools for each domain (`pnpm` for JS/TS, `uv` or `poetry` for Python) without forcing them into a single package manager. `Turborepo` orchestrates builds and tasks across both stacks to ensure efficient CI/CD and developer experience.
+**Rationale:** We leverage the best tools for each domain (`pnpm` for JS/TS, `uv` or `poetry` for Python) without forcing them into a single package manager..
 
 **Enforcement:**
 -   Frontend apps and shared packages live in `apps/` and `packages/` and are managed by `pnpm workspaces`.
