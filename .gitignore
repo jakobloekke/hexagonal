@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+.env*
+coverage/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor
+.vscode/
+.idea/
+
+# Tooling
+.terraform/
+*.tfstate*
+*.tfvars
+

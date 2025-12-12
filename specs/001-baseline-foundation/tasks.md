@@ -31,10 +31,10 @@ description: "Task list for Repository Baseline Foundation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize Git repository (if not already initialized) and .gitignore at root
-- [ ] T002 Create root `package.json` with scripts (`dev`, `lint`, `test`, `build`)
-- [ ] T003 Create `pnpm-workspace.yaml` defining `apps/frontend` and `packages/*`
-- [ ] T004 [P] Create `.editorconfig` for consistent coding style across languages
+- [x] T001 Initialize Git repository (if not already initialized) and .gitignore at root
+- [x] T002 Create root `package.json` with scripts (`dev`, `lint`, `test`, `build`)
+- [x] T003 Create `pnpm-workspace.yaml` defining `apps/frontend` and `packages/*`
+- [x] T004 [P] Create `.editorconfig` for consistent coding style across languages
 
 ---
 
@@ -44,11 +44,11 @@ description: "Task list for Repository Baseline Foundation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Initialize `apps/frontend` as a Vite React project
-- [ ] T006 Initialize `apps/backend` with `uv init` and `pyproject.toml`
-- [ ] T007 [P] Create `packages/ui` package structure with `package.json`
-- [ ] T008 [P] Create `packages/sdk` package structure with `package.json`
-- [ ] T009 [P] Setup global linting configuration (Prettier root config)
+- [x] T005 Initialize `apps/frontend` as a Vite React project
+- [x] T006 Initialize `apps/backend` with `uv init` and `pyproject.toml`
+- [x] T007 [P] Create `packages/ui` package structure with `package.json`
+- [x] T008 [P] Create `packages/sdk` package structure with `package.json`
+- [x] T009 [P] Setup global linting configuration (Prettier root config)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -62,12 +62,12 @@ description: "Task list for Repository Baseline Foundation"
 
 ### Implementation for User Story 1
 
-- [ ] T010 [US1] Configure `pnpm install` behavior in root
-- [ ] T011 [US1] Add `setup` script to root `package.json` chaining backend installation
+- [x] T010 [US1] Configure `pnpm install` behavior in root
+- [x] T011 [US1] Add `setup` script to root `package.json` chaining backend installation
 - [ ] T012 [US1] Implement `pnpm dev` to run frontend and backend concurrently (e.g. using `concurrently` or `turbo` if added later, currently basic shell parallel)
-- [ ] T013 [US1] Add basic "Hello World" endpoint in `apps/backend/app/main.py`
-- [ ] T014 [US1] Add basic AppShell in `apps/frontend/src/App.tsx` consuming backend
-- [ ] T015 [US1] Verify `pnpm lint` runs across both stacks
+- [x] T013 [US1] Add basic "Hello World" endpoint in `apps/backend/app/main.py`
+- [x] T014 [US1] Add basic AppShell in `apps/frontend/src/App.tsx` consuming backend
+- [x] T015 [US1] Verify `pnpm lint` runs across both stacks
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -81,12 +81,12 @@ description: "Task list for Repository Baseline Foundation"
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Create `scripts/scaffold-capability.sh` with executable permissions
-- [ ] T017 [US2] Implement argument parsing (capability name) in scaffolding script
-- [ ] T018 [US2] Implement frontend directory generation in `apps/frontend/src/features/`
-- [ ] T019 [US2] Implement backend directory generation in `apps/backend/app/modules/`
-- [ ] T020 [US2] Implement shared package generation in `packages/ui/` and `packages/sdk/`
-- [ ] T021 [US2] Add template files for new capabilities (React component, Python router) within script (heredocs)
+- [x] T016 [US2] Create `scripts/scaffold-capability.sh` with executable permissions
+- [x] T017 [US2] Implement argument parsing (capability name) in scaffolding script
+- [x] T018 [US2] Implement frontend directory generation in `apps/frontend/src/features/`
+- [x] T019 [US2] Implement backend directory generation in `apps/backend/app/modules/`
+- [x] T020 [US2] Implement shared package generation in `packages/ui/` and `packages/sdk/`
+- [x] T021 [US2] Add template files for new capabilities (React component, Python router) within script (heredocs)
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -100,10 +100,10 @@ description: "Task list for Repository Baseline Foundation"
 
 ### Implementation for User Story 3
 
-- [ ] T022 [US3] Create `.github/workflows/ci.yml`
-- [ ] T023 [US3] Define "Lint" job running `pnpm lint` and `uv run ruff check`
-- [ ] T024 [US3] Define "Test" job running `pnpm test` and `uv run pytest`
-- [ ] T025 [US3] Configure caching for `pnpm` and `uv` in CI workflow
+- [x] T022 [US3] Create `.github/workflows/ci.yml`
+- [x] T023 [US3] Define "Lint" job running `pnpm lint` and `uv run ruff check`
+- [x] T024 [US3] Define "Test" job running `pnpm test` and `uv run pytest`
+- [x] T025 [US3] Configure caching for `pnpm` and `uv` in CI workflow
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -113,9 +113,9 @@ description: "Task list for Repository Baseline Foundation"
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T026 Update `README.md` with setup instructions from US1
-- [ ] T027 Update `docs/COMPONENTS.md` (create if missing) describing folder structure
-- [ ] T028 Verify `scripts/scaffold-capability.sh` handles existing directory edge cases
+- [x] T026 Update `README.md` with setup instructions from US1
+- [x] T027 Update `docs/COMPONENTS.md` (create if missing) describing folder structure
+- [x] T028 Verify `scripts/scaffold-capability.sh` handles existing directory edge cases
 
 ---
 
