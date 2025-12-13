@@ -2,9 +2,10 @@
 # This configuration enables "Fork & Run" experience on Replit
 
 run = "pnpm dev"
+modules = ["nodejs-20", "web", "nix", "python-3.12"]
 
-# Modules to execute on Replit startup
-modules = ["nodejs-20", "python3-11", "bash"]
+[nix]
+channel = "stable-25_05"
 
 # Environment variables can be added here if needed
 # [env]
