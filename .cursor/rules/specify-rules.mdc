@@ -4,6 +4,10 @@ Auto-generated from all feature plans. Last updated: 2025-12-12
 
 ## Active Technologies
 - TypeScript 5.6+, React 18+ (002-shared-ui-storybook)
+- TypeScript 5.6+, React 18+, Node.js 20.19+ (003-component-library-expansion)
+- N/A (UI library - no persistence layer) (003-component-library-expansion)
+- TypeScript 5.7+ (repo), React 18+, Node.js 20.19+ (003-component-library-expansion)
+- N/A (UI library) (003-component-library-expansion)
 
 - Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts) (001-baseline-foundation)
 
@@ -23,9 +27,10 @@ cd src [ONLY COMMANDS FOR ACTIVE TECHNOLOGIES][ONLY COMMANDS FOR ACTIVE TECHNOLO
 Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts): Follow standard conventions
 
 ## Recent Changes
+- 003-component-library-expansion: Added TypeScript 5.7+ (repo), React 18+, Node.js 20.19+
+- 003-component-library-expansion: Added TypeScript 5.6+, React 18+, Node.js 20.19+
 - 002-shared-ui-storybook: Added TypeScript 5.6+, React 18+
 
-- 001-baseline-foundation: Added Python 3.12 (Backend), Node.js 20+ (Frontend/Tools), Bash (Scripts)
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->
