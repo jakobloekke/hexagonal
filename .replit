@@ -1,0 +1,12 @@
+# SecondGen Replit Configuration
+# This configuration enables "Fork & Run" experience on Replit
+
+run = "pnpm dev"
+
+# Modules to execute on Replit startup
+modules = ["nodejs-20", "python3-11", "bash"]
+
+# Environment variables can be added here if needed
+# [env]
+# DEBUG = "false"
+
