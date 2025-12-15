@@ -2,19 +2,46 @@
 # This configuration enables "Fork & Run" experience on Replit
 
 run = "pnpm dev"
-modules = ["nodejs-20", "web", "nix", "python-3.12"]
+modules = ["nodejs-20", "web", "nix", "python-base-3.13"]
 
 [nix]
 channel = "stable-25_05"
 
 [[ports]]
-localPort = 5173
+localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 5001
+externalPort = 3000
 
 [agent]
 expertMode = true
 
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Dev Server"
+
+[[workflows.workflow]]
+name = "Dev Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pnpm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
 # Environment variables can be added here if needed
 # [env]
 # DEBUG = "false"
-
